@@ -23,7 +23,7 @@
     
     transition: transform 250ms var(--time-function);
 
-    .backdrop.is-hidden& {
+    .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
     }
   }
