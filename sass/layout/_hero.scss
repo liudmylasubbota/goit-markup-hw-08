@@ -1,40 +1,126 @@
-.hero-list {
-  padding-top: 118px;
-  padding-bottom: 118px;
-
-  background-image: linear-gradient(
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
   ),
-    url("../images/hero_mobile-1x");
+    url("../images/h_mob1x.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 480px 400px;
   }
-  .main-title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.615;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 30px;
-    max-width: 360 px;
-    color: var(--second-color);
+ 
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px)and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px)and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px)and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+  ),
+    url("../images/h_mob2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
+}
+.main-title {
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--second-color);
+  margin-bottom: 30px;
+  }
+.modal-btn {
+  min-width: 200px;
+  height: 50px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  padding: 10px 32px;
+  margin: auto;
+  color: var(--second-color);
+}
 
-  .modal-btn {
-    min-width: 200px;
-    height: 50px;
-    background: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    padding: 10px 32px;
-    margin: auto;
-    color: var(--second-color);
-  }
+.hero-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero {
+  margin-bottom: 78px;
+}
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .hero {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+      url("../images/h_tab1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 768px 400px;
+    }
+    .hero {
+      margin-bottom: 60px;
+    }
+  }  
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px)and (max-width: 1199px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px)and (max-width: 1199px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px)and (max-width: 1199px) {
+    .hero {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+      url("../images/h_tab2x.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 768px 400px;
+    }
+    }
+    @media screen and (min-width: 1200px) {
+      .hero {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+      ),
+        url("../images/hero_desk-1x.jpg");
+        background-repeat: no-repeat;
+        background-size: 1600px 600px;
+      }
+      .main-title {
+        max-width: 696px;
+
+        font-size: 44px;
+        line-height: 1.875;
+      }
+    }  
+      @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+      screen and (min-resolution: 192dpi) and (min-width: 1200px),
+      screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+      .hero {
+        background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+      ),
+        url("../images/hero_desk-2x.jpg");
+        background-repeat: no-repeat;
+        background-size: 1600px 600px;
+      }
+      }
+      
