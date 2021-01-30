@@ -123,57 +123,89 @@
         </div>
       </section> 
       <!-- task -->
-      <!-- <section class="our-task">
+      <section class="our-task">
         <div class="task container">
           <h2 class="task-title">Чем мы занимаемся</h2>
           <ul class="task-item">
             <li class="task-item-list">
-              <img
-                class="task-image"
-                src="./images/work1.jpg"
-                alt="набирает текст на клавиатуре"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                srcset="./images/box-1.webp 1x, 
+                ./images/box-1@2x.webp 2x"
+                 type="image/webp"/>
+                <source
+                srcset="./images/box-1.jpg 1x, 
+                ./images/box-1@2x.jpg 2x"
+                />
+                <img src="./images/box-1.jpg" 
+                  width="370" height="294" 
+                  alt="пишем код" />
+              </picture>
               <p class="undertitle">Десктопные приложения</p>
             </li>
             <li class="task-item-list">
-              <img
-                class="task-image"
-                src="./images/work2.jpg"
-                alt="смотрит на изображение телефона на мониторе"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                srcset="./images/box-1.webp 1x, 
+                ./images/box-1@2x.webp 2x"
+                 type="image/webp"/>
+                <source
+                srcset="./images/box-1.jpg 1x, 
+                ./images/box-1@2x.jpg 2x"
+                />
+                <img src="./images/box-1.jpg" 
+                  width="370" height="294" 
+                  alt="пишем код" />
+              </picture>
               <p class="undertitle">Мобильные приложения</p>
             </li>
             <li class="task-item-list">
-              <img
-                class="task-image"
-                src="./images/work3.jpg"
-                alt="смотрит на палитру цветов на планшете"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                srcset="./images/box-1.webp 1x, 
+                ./images/box-1@2x.webp 2x"
+                 type="image/webp"/>
+                <source
+                srcset="./images/box-1.jpg 1x, 
+                ./images/box-1@2x.jpg 2x"
+                />
+                <img src="./images/box-1.jpg" 
+                  width="370" height="294" 
+                  alt="пишем код" />
+              </picture>
               <p class="undertitle">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
       </section>
-      -->
-      <!--team
       <section class="team-section">
         <div class="team container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-item">
             <li class="team-item-list">
-              <img
-                class="team-img"
-                src="./images/designer.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/about1-270@1x.webp 1x, 
+                ./images/about1-270@2x.webp 2x" media="(min-width:1200px)" type="image/webp">
+
+                <source srcset="./images/about1-270@1x.jpg 1x,
+                  ./images/about1-270@2x.jpg 2x" media="(min-width:1200px)">
+
+                <source srcset="./images/about1-354@1x.webp 1x,
+                ./images/about1-354@2x.webp 2x" media="(min-width:768px)"
+                  type="image/webp">
+
+                <source srcset="./images/about1-354@1x.jpg 1x,
+                  ./images/about1-354@2x.jpg 2x" media="(min-width:768px)">
+
+                <source srcset="./images/about1-480@1x.webp 1x,
+                ./images/about1-480@2x.webp 2x" media="(max-width:767px)"
+                  type="image/webp">
+
+                <source srcset="./images/about1-480@1x.jpg 1x,
+                  ./images/about1-480@2x.jpg 2x" media="(max-width:767px)">
+
+                <img src="./images/about1-480@1x.jpg" width="100%" alt="Фото Игорь Демьяненко" />
+              </picture>
               <div class="team-wrapper">
                 <h3 class="team-name">Игорь Демьяненко</h3>
                 <p class="team-designation">Product Designer</p>
@@ -210,6 +242,26 @@
               </div>
             </li>
             <li class="team-item-list">
+              <picture>
+                <source srcset="./images/about2-270@1x.webp 1x, 
+                ./images/about2-270@2x.webp 2x" media="(min-width:1200px)" type="image/webp">
+
+                <source srcset="./images/about2-270@1x.jpg 1x,
+                  ./images/about2-270@2x.jpg 2x" media="(min-width:1200px)">
+
+                <source srcset="./images/about2-354@1x.webp 1x,
+                ./images/about2-354@2x.webp 2x" media="(min-width:768px)"
+                  type="image/webp">
+
+                <source srcset="./images/about2-354@1x.jpg 1x,
+                  ./images/about2-354@2x.jpg 2x" media="(min-width:768px)">
+
+                <source srcset="./images/about2-480@1x.webp 1x,
+                ./images/about2-480@2x.webp 2x" media="(max-width:767px)"
+                  type="image/webp">
+
+                <source srcset="./images/about2-480@1x.jpg 1x,
+                  ./images/about2-480@2x.jpg 2x" media="(max-width:767px)">
               <img
                 class="team-img"
                 src="./images/developer.jpg"
@@ -253,13 +305,29 @@
               </div>
             </li>
             <li class="team-item-list">
-              <img
-                class="team-img"
-                src="./images/marketing.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/about3-270@1x.webp 1x, 
+                ./images/about3-270@2x.webp 2x" media="(min-width:1200px)" type="image/webp">
+
+                <source srcset="./images/about3-270@1x.jpg 1x,
+                  ./images/about3-270@2x.jpg 2x" media="(min-width:1200px)">
+
+                <source srcset="./images/about3-354@1x.webp 1x,
+                ./images/about3-354@2x.webp 2x" media="(min-width:768px)"
+                  type="image/webp">
+
+                <source srcset="./images/about3-354@1x.jpg 1x,
+                  ./images/about3-354@2x.jpg 2x" media="(min-width:768px)">
+
+                <source srcset="./images/about3-480@1x.webp 1x,
+                ./images/about3-480@2x.webp 2x" media="(max-width:767px)"
+                  type="image/webp">
+
+                <source srcset="./images/about3-480@1x.jpg 1x,
+                  ./images/about3-480@2x.jpg 2x" media="(max-width:767px)">
+
+                <img src="./images/about3-480@1x.jpg" width="100%" alt="Фото Николай Тарасов" />
+                </picture>
               <div class="team-wrapper">
                 <h3 class="team-name">Николай Тарасов</h3>
                 <p class="team-designation">Marketing</p>
@@ -296,12 +364,29 @@
               </div>
             </li>
             <li class="team-item-list">
-              <img
-                src="./images/udesigner.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/about4-270@1x.webp 1x, 
+                ./images/about4-270@2x.webp 2x" media="(min-width:1200px)" type="image/webp">
+
+                <source srcset="./images/about4-270@1x.jpg 1x,
+                  ./images/about4-270@2x.jpg 2x" media="(min-width:1200px)">
+
+                <source srcset="./images/about4-354@1x.webp 1x,
+                ./images/about4-354@2x.webp 2x" media="(min-width:768px)"
+                  type="image/webp">
+
+                <source srcset="./images/about4-354@1x.jpg 1x,
+                  ./images/about4-354@2x.jpg 2x" media="(min-width:768px)">
+
+                <source srcset="./images/about4-480@1x.webp 1x,
+                ./images/about4-480@2x.webp 2x" media="(max-width:767px)"
+                  type="image/webp">
+
+                <source srcset="./images/about4-480@1x.jpg 1x,
+                  ./images/about4-480@2x.jpg 2x" media="(max-width:767px)">
+
+                <img src="./images/about4-480@1x.jpg" width="100%" alt="Фото Михаил Ермаков" />
+                </picture>
               <div class="team-wrapper">
                 <h3 class="team-name">Михаил Ермаков</h3>
                 <p class="team-designation">UI Designer</p>

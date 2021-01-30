@@ -558,8 +558,6 @@ img {
   .features-list-item {
     width: 450px;
     height: 226px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-bottom: 30px;
   }
   .features-title {
@@ -680,143 +678,200 @@ img {
   }
 }
 
-.our-task {
-  padding-bottom: 97px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .our-task {
+    display: none;
+  }
 }
 
-.task .container {
-  margin-bottom: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-task {
+    display: none;
+  }
 }
 
-.task-item {
-  display: flex;
-}
-
-.task-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.task-item-list {
-  position: relative;
-}
-
-.task-item-list:not(:last-child) {
-  margin-right: 30px;
-}
-
-.undertitle {
-  font-family: var(--main-font);
-  font-size: 14px;
-  line-height: 1.14;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--second-color);
-  width: 370px;
-  height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+@media screen and (min-width: 1200px) {
+  .our-task {
+    padding-bottom: 97px;
+  }
+  .task .container {
+    margin-bottom: 50px;
+  }
+  .task-item {
+    display: flex;
+  }
+  .task-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .task-item-list {
+    position: relative;
+  }
+  .task-item-list:not(:last-child) {
+    margin-right: 30px;
+  }
+  .undertitle {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-color);
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .team-section {
-  background: var(--second-background);
-  padding-bottom: 94px;
-  padding-top: 94px;
+  background-color: #f5f4fa;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 0px;
 }
 
-.team-item {
-  display: flex;
-}
-
-.team-item-list {
-  background-color: var(--second-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team-item-list:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.187;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.team-designation {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.187;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
-  text-align: center;
-  margin-bottom: 10px;
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding: 94px 0px;
+  }
 }
 
 .team-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-bottom: 50px;
 }
 
-.team-wrapper {
-  padding: 30px 10px;
+@media screen and (min-width: 1200px) {
+  .team-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+
+.team-item {
+  margin-top: 0px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.team-item-list {
+  margin-bottom: 30px;
+  max-width: 450px;
+  font-size: 0;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 24px;
+}
+
+.team-item-list:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .team-item-list {
+    margin-right: 30px;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-item-list:nth-child(2n) {
+    margin-right: 0;
+  }
+  .team-item-list:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-item-list {
+    width: 270px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+  }
+  .team-item-list:last-child {
+    margin-right: 0;
+  }
+}
+
+.team-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-designation {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .social-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: auto;
+  max-width: 206px;
+  font-size: 0px;
 }
 
-.social-list-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.social-list-item {
+  display: inline-flex;
+  margin-left: 10px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--second-color);
-  transition: background-color 250ms var(--time-function);
+  border: none;
+  color: #afb1b8;
 }
 
-.social-list-link:hover, .social-list-link:focus {
-  background-color: var(--accent-color);
+.social-list-item:first-child {
+  margin-left: 0px;
 }
 
-.social-list-icon {
-  fill: var(--icon-color);
-  transition: fill 250ms var(--time-function);
+@media screen and (min-width: 1200px) {
+  .social-list-item:hover, .social-list-item:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+  }
 }
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--second-color);
+.about--icon {
+  fill: currentColor;
+  margin: auto;
 }
 
 .our-customer {
